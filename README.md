@@ -49,7 +49,6 @@ This will:
 ```
 
 ## Author
-
-* \[Palesa Molefe]
+Palesa Molefe
 
 

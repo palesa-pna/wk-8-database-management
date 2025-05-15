@@ -1,36 +1,57 @@
-# Library Management System Database
+# Library Management System 📚
 
-![Database ER Diagram](docs/ERD.png)
+## Description
 
-## Project Description
+This project is a relational database system designed for managing a library's book inventory, members, borrowing records, and administrative staff. It uses MySQL to define and enforce relationships between entities such as books, members, authors, and loans.
 
-A comprehensive MySQL database design for a Library Management System. This database supports:
+The system is designed to:
 
-- Member management and membership tracking
-- Book catalog with authors, publishers, and genres
-- Inventory management for physical book copies
-- Loan and reservation systems
-- Fine calculation and tracking
-- Staff management
-- Audit logging for security
+* Track library members and their borrowing history
+* Manage book records, including copies and authors
+* Enforce data integrity with foreign keys and constraints
+* Provide a solid base for building a library management application
 
-## Database Schema Features
+## How to Run / Setup
 
-- 11 normalized tables with proper relationships
-- Constraints for data integrity (PK, FK, NOT NULL, UNIQUE, CHECK)
-- Support for one-to-one, one-to-many, and many-to-many relationships
-- Enforced business rules through constraints
-- Audit trail for important operations
+1. **Clone this repository**:
 
-## Setup Instructions
+```bash
+git clone https://github.com/your-username/library-management-db.git
+```
 
-### Prerequisites
+2. **Open MySQL or a GUI tool like MySQL Workbench**
 
-- MySQL Server (8.0+ recommended)
-- MySQL Workbench or another MySQL client
+3. **Run the SQL script**:
 
-### Installation
+* Locate the file `library_management.sql`
+* Execute it in your SQL environment
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/library-management-db.git
+This will:
+
+* Create a database named `library_management`
+* Create all required tables with proper constraints and relationships
+
+## Entity-Relationship Diagram (ERD)
+
+### ERD link
+
+👉 [View ERD on dbdiagram.io](https://dbdiagram.io/d/682382c55b2fc4582f703349)
+
+
+## Contents
+
+```
+📂 library-management-db/
+├── library_management.sql       # Main SQL file with CREATE TABLE statements
+├── README.md                    # Project documentation
+└── screenshots/
+    └── erd.png                  # ERD image (optional)
+```
+
+## Author
+
+* \[Eliud Ndiege]
+
+## License
+
+This project is open source under the MIT License.
